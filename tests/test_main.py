@@ -2,7 +2,7 @@
 import pytest
 from click.testing import CliRunner
 
-from pytest-gen import __main__
+from pytest_gen import __main__
 
 
 @pytest.fixture
