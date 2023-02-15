@@ -9,7 +9,7 @@ homepage = "https://github.com/56kyle/pytest-gen"
 repository = "https://github.com/56kyle/pytest-gen"
 documentation = "https://pytest-gen.readthedocs.io"
 packages = [
-    { include = "pytest-gen", from = "src" },
+    { include = "pytest_gen", from = "src" },
 ]
 classifiers = [
     "Development Status :: 1 - Planning",
@@ -49,7 +49,7 @@ xdoctest = {extras = ["colors"], version = ">=0.15.10"}
 myst-parser = {version = ">=0.16.1"}
 
 [tool.poetry.scripts]
-pytest-gen = "pytest-gen.__main__:main"
+pytest-gen = "pytest_gen.__main__:main"
 
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]
@@ -57,7 +57,7 @@ tests = ["tests", "*/tests"]
 
 [tool.coverage.run]
 branch = true
-source = ["pytest-gen", "tests"]
+source = ["pytest_gen", "tests"]
 
 [tool.coverage.report]
 show_missing = true
